@@ -1,0 +1,48 @@
+{%extends 'base.html'%}
+<!-- STYLE -->
+{%block STYLE%}
+<style>
+    body{
+        text-align: center;
+    }
+    .p_block{
+        height:300px;
+        width: 200px;
+        overflow: hidden;
+        background-color: brown;
+    }
+    .p_block_img{
+        width: 100%;
+        height: 200px;
+    }
+    .p_block_info{
+        width: 100%;
+        height: calc(300px-200px);
+        background-color: rgb(163, 83, 83);
+    }
+</style>
+{%endblock%}
+<!-- TITLE -->
+{%block TITLE%}
+    PROJECTS SECTION
+{%endblock%}
+<!-- HEADER -->
+{%block HEADER%}
+    <nav>
+        <h1>This is Project Section</h1>
+    </nav>
+{%endblock%}
+<!-- MAIN -->
+{%block MAIN%}
+    <div name = "p_block" class="p_block">
+        <img src="" name = "p_block_img" class="p_block_img" />
+        <div name = "p_block_info" class="p_block_info">
+            <strong>Project Name Here  </strong>
+            <p>This is a project information in short</p>
+        </div>
+    </div>
+{%endblock%}
+<!-- FOOTER -->
+{%block FOOTER%}
+{%endblock%}
+

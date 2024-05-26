@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%block STYLE%}
+<style>
+    .Form1{
+        display: {{display}};
+    }
+</style>
+{%endblock%}
+
+{%block MAIN%}
+<h1>This is the P1 page</h1>
+<form name="f1" class="Form1" method="post" action="/p1.start">
+    <label>Select</label>
+    <input type="radio" name="choice" form="f1" value="Stone">
+    <input type="radio" name="choice" form="f1" value="paper">
+    <input type="radio" name="choice" form="f1" value="Scissor">
+    <input type="text" name="c0">
+    <input type="submit"  value="Submit"/>
+    
+</form>
+{{msg}}
+{%endblock%}
